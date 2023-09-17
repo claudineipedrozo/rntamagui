@@ -7,6 +7,7 @@ import config from './tamagui.config'
 import { User } from './src/components/User'
 import { ChangeTheme } from './src/components/ChangeTheme'
 import { Button } from './src/components/Button'
+import { ListItem } from './src/components/LIstItem'
 
 export default function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
@@ -33,6 +34,7 @@ export default function App() {
             <Input flex={1} w="$5" h="$5" placeholder="Buscar..." focusStyle={{ bw:2, boc:"$blue10"}} />
             <Button background='outline'/>
           </XStack>
+            <ListItem />            
         </YStack>
       </Theme>
     </TamaguiProvider>
